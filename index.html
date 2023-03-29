@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>tip-calculator</title>
+</head>
+<body>
+    <div class="header-logo">
+        <img class="logo" src="./images/logo.svg" alt="logo">
+    </div>
+    <div class="card-container">
+        <div class="section-one">
+            <label id="bill-header">Bill</label>
+            <input id="bill-number" type="number" />
+            <div>
+                <label id="tip-header">Select Tip %</label>
+            </div>
+            <div class="tips">
+                <div class="button tip-5">5%</div>
+                <div class="button tip-10">10%</div>
+                <div class="button tip-15 activ-tip">15%</div>
+                <div class="button tip-25">25%</div>
+                <div class="button tip-50">50%</div>
+                <div class="button-tip">
+                    <input id="button-tip" type="number" placeholder="custom">
+                </div>
+           </div>
+           <div class="people-number">
+                <label class="number">Number of People</label>
+                <label class="zero">Can't be zero</label>
+            </div>
+            <input id="people-input" type="number">
+           </div>
+        <div class="section-two">
+            <div class="amount-container">
+                <div class="text">
+                    <p class="amount1">Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount-tip">$4.27</div>
+                </div>
+                <div class="total-container">
+                    <div class="text">
+                        <p class="amount2">total</p>
+                        <p class="person">/ person</p> 
+                    </div>
+                    <div class="amount-total">$32.79</div>
+                </div>
+                <button class="reset-button">RESET</button>
+            </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+</html>

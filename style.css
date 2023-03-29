@@ -1,0 +1,270 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    background-color:#C5E4E7 ;
+    font-family: "Space Mono";
+}
+
+.header-logo{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-container{
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap:2rem;
+    
+}
+
+input{
+    width: 19.4rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #F3F9FA;
+    padding: 0  19px ;
+    background-position: 1.05rem 0.95rem;
+    background-repeat: no-repeat;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#error {
+    color: red;
+}
+
+label{
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #5E7A7D;
+}
+
+#bill-header{
+    margin-bottom: 0.37rem;
+}
+
+#bill-number{
+    background-image: url(./images/icon-dollar.svg);
+    
+}
+
+#people-input{
+    background-image: url(./images/icon-person.svg);
+}
+
+#tip-header{
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.tips{
+display: grid;
+grid-template-columns: 144px 144px;
+row-gap: 16px;
+column-gap: 16px;
+margin-bottom: 32px;
+margin-top: 16px;
+}
+
+.number{
+    margin-bottom: 0.37rem;
+}
+
+.button{
+    background-color:#00474B ;
+    color: #FFFFFF;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius:0.3rem ;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.tip-15{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+#button-tip{
+    width: 100%;
+}
+
+.zero{
+    color: red;
+    display: none;
+}
+
+
+
+.section-two{
+    width: 100%;
+    background-color: #00474B;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 22px 22px;
+}
+
+.amount-tip{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    color:#26C2AE ;
+    font-family: "Space Mono";
+}
+
+.amount-total{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    color:#26C2AE ;
+    font-family: "Space Mono";
+}
+
+.amount-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.total-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.person{
+    font-size: 0.9rem;
+    color: #7F9D9F;
+    font-weight: 700;
+}
+
+.amount-total{
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.reset-button{
+    width: 16.5rem;
+    height: 3rem;
+    background-color: #26C2AE;
+    color: #00474B;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.3rem;
+    border: none;
+    
+}
+
+@media screen  and (min-width: 768px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-container{
+        flex-direction:row ;
+        border-radius: 20px ;
+    }
+
+    .section-two{
+        width: 50%;
+        margin-top: 0;
+        gap:3.2rem;
+        height: 26rem;
+    }
+
+    .reset-button{
+        width: 17.5rem;
+    }
+}
+/* screen 990px */
+
+@media screen  and (min-width: 990px){
+     body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-container{
+        width: 920px;
+        height: 481px;
+        flex-direction:row ;
+        border-radius: 20px  ;
+        gap: 3rem;
+    }
+
+    .section-one{
+        width: 50%;
+    }
+
+    #tip-header{
+        margin-top: 2.5rem;
+    }
+
+    .section-two{
+        width: 50%;
+        margin-top: 0;
+        gap:3.2rem;
+    }
+
+    input{
+        width:23.68rem ;
+    }
+
+    .tips{
+        grid-template-columns: 117px 117px 117px;
+        margin-bottom: 2.5rem;
+    }
+
+    #button-tip{
+        text-align: center;
+        padding: 0;
+    }
+    
+    .amount-tip{
+        font-size: 3rem;
+    }
+
+    .amount-total{
+        font-size: 3rem;
+    }
+    
+    .reset-button{
+        margin-top: 6.25rem;
+        font-size: 20px;
+    }
+
+    .reset-button{
+        width: 21rem;
+    }
+}
+    
